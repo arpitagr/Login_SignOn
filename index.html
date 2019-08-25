@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Complete Accounts Panel</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onselectstart="return false;" oncontextmenu="return false" oncopy="return false" onpaste="return false" oncut="return false">
+	<form method="POST" action="#" id="login_form">
+		<span>Login Panel</span>
+		<hr>
+		<label>Username : </label>
+		<br>
+		<input type="text" name="username" placeholder="Please Enter Your Special Username">
+		<br>
+		<label>Password : </label>
+		<br>
+		<input type="password" name="password" placeholder="Please Enter Your Secret Password"> 
+		<br>
+		<button type="submit" name="login_submit" id="login_submit">Log Me In</button>
+		<span id="login_user">New User ? <a href="#" onclick="change_to_register()"> Click Here to Register</a> </span>
+	</form>
+	<form method="POST" action="#" id="register_form">
+		<span>Registration Panel</span>
+		<hr>
+		<label>Email : </label>
+		<br>
+		<input type="text" name="username" placeholder="Please Enter Your Email">
+		<br>
+		<label>Password : </label>
+		<br>
+		<input type="password" name="password" placeholder="Please Enter Your Secret Password"> 
+		<br>
+		<button type="submit" name="register_submit" id="register_submit">Register Me</button>
+		<span id="register_user">Already Registerd <a href="#" onclick="change_to_login()"> Click Here to Login</a> </span>
+	</form>
+	<form method="POST" action="#" id="reset_pw_form">
+		<span>Reset Your Password</span>
+		<hr>
+		<label>Please Provide your Email : </label>
+		<br>
+		<input type="text" name="username" placeholder="Please Enter Your Email">
+		<br>
+		<button type="submit" name="reset_pw_submit" id="register_submit">Reset My Password</button>
+		<span id="reset_password"><a href="#" onclick="change_to_login()"> Click Here to Go Back</a> </span>
+	</form>
+	<div id="forget_pw_form">
+		<span id="forget_pw">Forgot Password ? <a href="#" onclick="reset_password();"> Click Here to Reset</a> </span>
+	</div>
+	<script type="text/javascript" src="js/toggle_functions.js" ></script>
+</body>
+</html>
